@@ -39,7 +39,7 @@ export default function FormUserLogin() {
             alt="bp 9"
           />
           <h2
-            className={`${futuraBold.className} text-center uppercase text-[11px] sm:text-[14px] lg:text-[16px] leading-3 sm:leading-4 lg:leading-5 text-[#030302] tracking-wide`}
+            className={`${futuraBold.className} text-center uppercase text-[11px] sm:text-[16px] lg:text-[22px] leading-3 sm:leading-4 lg:leading-5 text-[#030302] tracking-wide`}
           >
             Enter your details <br /> to claim your
           </h2>
