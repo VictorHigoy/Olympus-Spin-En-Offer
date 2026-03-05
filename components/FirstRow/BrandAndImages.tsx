@@ -9,7 +9,7 @@ export default function BrandAndImages() {
         width={182.88}
         height={47.52}
         src="/images/first-row/Logo.svg"
-        className="w-[182.88px] sm:w-[274.32px]  lg:w-[365.76px] h-auto sm:mb-5 lg:mb-5"
+        className="w-[182.88px] sm:w-[320px]  lg:w-[380px] h-auto sm:mb-5 lg:mb-5"
         alt="gates of olympus logo"
       />
 
@@ -24,7 +24,7 @@ export default function BrandAndImages() {
         />
 
         {/* Free spins */}
-        <div className="absolute bottom-3.5 left-6 sm:left-9 lg:left-10 lg:-bottom-4">
+        <div className="absolute bottom-3.5 left-6 sm:left-9 lg:left-10 lg:-bottom-0">
           <Image
             width={117.84}
             height={80.4}
