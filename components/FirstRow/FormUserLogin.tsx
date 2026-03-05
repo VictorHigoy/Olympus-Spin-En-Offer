@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import localFont from "next/font/local";
+import { useState } from "react";
 
 const futuraBold = localFont({
   src: "../../fonts/Futura-Bold.otf",
@@ -9,6 +11,14 @@ const futuraBold = localFont({
 });
 
 export default function FormUserLogin() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(true);
+    setTimeout(() => setClicked(false), 150);
+    // Add your click logic here
+  };
+
   return (
     <div className="flex flex-col items-center lg:items-start">
       <div className="relative">
@@ -66,13 +76,22 @@ export default function FormUserLogin() {
             />
           </div>
 
-          <Image
-            width={130.32}
-            height={31.2}
-            className="w-[130.32px] sm:w-[195.48px] lg:w-[260.64px] h-auto sm:mt-1 lg:mt-2"
-            src="/images/first-row/claim-button.svg"
-            alt="claim button"
-          />
+          <button
+            onClick={handleClick}
+            className={`
+        sm:mt-1 lg:mt-2 transform transition-transform duration-150 cursor-pointer
+        ${clicked ? "scale-90" : "scale-100"} 
+        focus:outline-none
+      `}
+          >
+            <Image
+              width={130.32}
+              height={31.2}
+              className="w-[130.32px] sm:w-[195.48px] lg:w-[260.64px] h-auto "
+              src="/images/first-row/claim-button.svg"
+              alt="claim button"
+            />
+          </button>
         </div>
       </div>
     </div>

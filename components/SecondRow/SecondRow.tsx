@@ -1,5 +1,7 @@
+"use client";
 import localFont from "next/font/local";
 import Image from "next/image";
+import { useState } from "react";
 
 const futuraBold = localFont({
   src: "../../fonts/Futura-Bold.otf",
@@ -9,6 +11,14 @@ const futuraBold = localFont({
 });
 
 export default function SecondRow() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(true);
+    setTimeout(() => setClicked(false), 150);
+    // Add your click logic here
+  };
+
   return (
     <section
       className="-mt-2 z-20 relative bg-no-repeat bg-top bg-cover sm:bg-contain sm:bg-repeat py-[17.22px] sm:py-[25.5px] lg:py-[34px] xl:py-[100px] px-8"
@@ -47,13 +57,22 @@ export default function SecondRow() {
             src="/images/second-row/Phone.svg"
             alt="Phone with game"
           />
-          <Image
-            width={130.32}
-            height={31.2}
-            className="w-[130.32px] mt-2 sm:mt-3 lg:mt-4 mb-1 sm:w-[195.48px] lg:w-[260.64px] h-auto "
-            src="/images/first-row/claim-button.svg"
-            alt="claim button"
-          />
+          <button
+            onClick={handleClick}
+            className={`
+                   transform transition-transform duration-150 cursor-pointer
+                  ${clicked ? "scale-90" : "scale-100"} 
+                  focus:outline-none
+                `}
+          >
+            <Image
+              width={130.32}
+              height={31.2}
+              className="w-[130.32px] mt-2 sm:mt-3 lg:mt-4 mb-1 sm:w-[195.48px] lg:w-[260.64px] h-auto "
+              src="/images/first-row/claim-button.svg"
+              alt="claim button"
+            />
+          </button>
         </div>
       </div>
     </section>
