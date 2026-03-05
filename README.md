@@ -1,3 +1,8 @@
 The layout is built using a component-based approach (FirstRow, SecondRow, ThirdRow) with TailwindCSS for responsive design. Images and typography use custom widths at mobile, sm, and lg breakpoints to maintain design fidelity, while flex layouts adjust direction for smaller screens (max-[400px]:flex-col). Decorative elements like icons are absolutely positioned relative to their containers to preserve visual hierarchy.
 
 To improve UX, a full-page loading state ensures all images are loaded before rendering, with an extra 2-second delay for smooth transition. The claim button has a click animation for interaction, and inputs are styled responsively. Assumptions include fixed image widths and absolute positions for layout consistency, with tradeoffs being less fluid behavior on unusual screen sizes. Additionally, metadata (title, description, favicon) was added for SEO and branding.
+
+Tech Stack:
+Next.Js
+TailwindCSS
+Typescript
