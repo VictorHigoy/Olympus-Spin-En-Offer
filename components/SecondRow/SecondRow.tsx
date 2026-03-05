@@ -21,7 +21,7 @@ export default function SecondRow() {
 
   return (
     <section
-      className="-mt-2 z-20 relative bg-no-repeat bg-top bg-cover sm:bg-contain sm:bg-repeat py-[22px] sm:py-[25.5px] lg:py-[34px] xl:py-[100px] px-8"
+      className="-mt-2 z-20 relative bg-no-repeat bg-top bg-cover min-[516px]:bg-contain sm:bg-cover md:bg-contain min-[516px]:bg-repeat py-[22px] sm:py-[25.5px] lg:py-[34px] xl:py-[100px] px-8"
       style={{ backgroundImage: "url('/images/BG/Third-BG.svg')" }}
     >
       <div className=" mx-auto">
