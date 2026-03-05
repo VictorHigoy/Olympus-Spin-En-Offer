@@ -21,7 +21,7 @@ export default function ThirdRow() {
           >
             You can even become a multi-millionaire just like them:
           </h2>
-          <div className="flex flex-row max-[400px]:flex-col gap-2">
+          <div className="flex flex-row max-[400px]:flex-col gap-2 lg:gap-5">
             <div className="relative">
               <Image
                 width={130}
