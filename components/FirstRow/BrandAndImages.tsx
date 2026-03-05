@@ -15,29 +15,16 @@ export default function BrandAndImages() {
 
       {/* Olympus Image */}
       <div className="relative left-5 sm:left-8 lg:left-11">
-        <div className="relative w-fit">
-          <Image
-            width={201.12}
-            height={201.12}
-            src="/images/first-row/Olympus.svg"
-            className="w-[201.12px] sm:w-[301.68px] lg:w-[402.24px] h-auto"
-            alt="gates of olympus"
-          />
-
-          <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden pointer-events-none mask-[linear-gradient(to_top,black,transparent)]">
-            {" "}
-            <Image
-              width={201.12}
-              height={201.12}
-              src="/images/first-row/Olympus.svg"
-              className="w-[201.12px] sm:w-[301.68px] lg:w-[402.24px] h-auto blur-md translate-y-6 opacity-100"
-              alt=""
-            />
-          </div>
-        </div>
+        <Image
+          width={210}
+          height={210}
+          src="/images/first-row/Olympus.svg"
+          className="w-[210px] sm:w-[301.68px] lg:w-[402.24px] h-auto"
+          alt="gates of olympus"
+        />
 
         {/* Free spins */}
-        <div className="absolute -bottom-2 left-5 sm:left-9 lg:left-10 lg:-bottom-4">
+        <div className="absolute bottom-3.5 left-6 sm:left-9 lg:left-10 lg:-bottom-4">
           <Image
             width={117.84}
             height={80.4}
@@ -48,7 +35,7 @@ export default function BrandAndImages() {
         </div>
 
         {/* Emerald Red */}
-        <div className="absolute top-3 left-3 sm:left-5 sm:top-4  lg:top-5">
+        <div className="absolute top-4 left-3 sm:left-5 sm:top-6  lg:top-8">
           <Image
             width={24.72}
             height={24.96}
@@ -81,7 +68,7 @@ export default function BrandAndImages() {
         </div>
 
         {/* Emerald Blue */}
-        <div className="absolute -left-8 top-28 sm:-left-10 sm:top-42 lg:top-57 lg:-left-15">
+        <div className="absolute -left-6 top-28 sm:-left-10 sm:top-42 lg:top-57 lg:-left-15">
           <Image
             width={30.5}
             height={32}
@@ -92,7 +79,7 @@ export default function BrandAndImages() {
         </div>
 
         {/* 250x Icon */}
-        <div className="absolute left-38 sm:left-58 sm:bottom-6 lg:left-77 lg:bottom-8 bottom-4">
+        <div className="absolute left-40 sm:left-58 sm:bottom-10.5 lg:left-75 lg:bottom-14 bottom-7.5">
           <Image
             width={52.5}
             height={37}
